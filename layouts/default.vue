@@ -8,6 +8,7 @@
       app
     >
       <v-list>
+        <p>サイドバーの部分</p>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -48,7 +49,7 @@
       >
         <v-icon>mdi-minus</v-icon>
       </v-btn>
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title v-text="title"></v-toolbar-title>
       <v-spacer />
       <v-btn
         icon
@@ -105,12 +106,17 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: '認証画面',
+          to: '/auth'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'BattleCity'
     }
   }
 }
